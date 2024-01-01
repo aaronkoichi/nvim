@@ -2,16 +2,16 @@
 
 - :MasonInstall the languages you need
 - configure none-ls for the lsp linting.
-
+- Note: Setup the languages you require on lsp-config.lua. TreeSitter automatically installs the required language but it is okay to config treesitter.lua as well.
 ## Keybinds
 - [space]fg --> opens telescope
 - [space]n --> opens filetree
 - Shift + k --> shows code info
 - [space]ca -->code actions
 
-## **************
+
 ## VIM CHEAT SHEET 
-## **************
+
 ##### . = repeats a command
 ##### i - insert mode 
 ##### I = insert from the front
