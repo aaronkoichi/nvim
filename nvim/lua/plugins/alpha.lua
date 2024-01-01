@@ -15,7 +15,6 @@ return {
 		  ███████████ ███    ███ █████████ █████ █████ ████ █████  
 		 ██████  █████████████████████ ████ █████ █████ ████ ██████ 
 		                                                                       
-		                        [ @gambhir_sharma]                        
 		                                                                       
     ]]
     dashboard.section.header.val = vim.split(logo, "\n", { trimempty = true })
