@@ -1,4 +1,7 @@
 ## NEOVIM configs 
+To clone the config:
+ - git clone https://github.com/aaronkoichi/nvim.git ~/.config
+
 
 - :MasonInstall the languages you need
 - configure none-ls for the lsp linting.
