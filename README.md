@@ -8,6 +8,7 @@ To clone the config:
 - Note: Setup the languages you require on lsp-config.lua. TreeSitter automatically installs the required language but it is okay to config treesitter.lua as well.
 ## Keybinds
 - [space]fg --> opens telescope
+- [space]gf --> formats the code
 - [space]n --> opens filetree
 - Shift + k --> shows code info
 - [space]ca -->code actions
