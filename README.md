@@ -1,25 +1,21 @@
 ## Screenshots
-
-
-
-
-
+![Screenshot of Neovim](https://github.com/aaronkoichi/nvim/blob/master/Images/main.png?raw=true)
 ## Prerequisites
  - Rose Pine themed Windows Terminal at windowsterminalthemes.dev 
  - Oh My Posh setup with tokyonight_storm theme for Powershell(initial setup), command prompt and WSL.
 
 ## Oh My Posh Configs 
-Windows config:
+##### Windows config:
 
- - oh-my-posh init pwsh --config 'C:\Users\[USER FOLDER]\AppData\Local\Programs\oh-my-posh\themes\tokyonight_storm.omp.json' | Invoke-Expression
+ ` oh-my-posh init pwsh --config 'C:\Users\[USER FOLDER]\AppData\Local\Programs\oh-my-posh\themes\tokyonight_storm.omp.json' | Invoke-Expression `
 
-CMD config with Cline:
+##### CMD config with Cline:
 
-- load(io.popen('oh-my-posh init cmd --config C:/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/tokyonight_storm.omp.json'):read("*a"))()
+`load(io.popen('oh-my-posh init cmd --config C:/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/tokyonight_storm.omp.json'):read("*a"))()`
 
-WSL bash config:
+##### WSL bash config:
 
- - eval "$(oh-my-posh init bash --config /mnt/c/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/tokyo.omp.json)"
+`eval "$(oh-my-posh init bash --config /mnt/c/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/tokyo.omp.json)"`
 
 
 
