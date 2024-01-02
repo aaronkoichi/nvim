@@ -11,7 +11,6 @@ return {
 
 		dashboard.section.header.val = {
 [[																																]],
-[[																																]],
 [[		  /$$$$$$                                                /$$   /$$           /$$           /$$       /$$ /$$			]],
 [[		 /$$__  $$                                              | $$  /$$/          |__/          | $$      |__/| $/			]],
 [[		| $$  \ $$  /$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$$       | $$ /$$/   /$$$$$$  /$$  /$$$$$$$| $$$$$$$  /$$|_//$$$$$$$		]],    
@@ -30,8 +29,6 @@ return {
 [[							    █████████ ██████████ █████████ █████ █████ ████ █████                                ]],
 [[							  ███████████ ███    ███ █████████ █████ █████ ████ █████                               ]],
 [[							 ██████  █████████████████████ ████ █████ █████ ████ ██████                              ]],
-[[                                                                                                                              ]],
-[[                                                                                                                              ]],
 }
 
 		_Gopts = {
@@ -43,7 +40,9 @@ return {
 		local function footer()
 			return "Hello, AaronKoichi"
 		end
-
+		dashboard.section.buttons.val = {
+			dashboard.button("f", "    > Open Telescope", ":Telescope find_files<CR>")
+		}
 		dashboard.section.footer.val = footer()
 
 		dashboard.opts.opts.noautocmd = true
