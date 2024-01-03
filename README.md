@@ -1,5 +1,5 @@
 ## Screenshots
-![Screenshot of alpha.lua]( https://github.com/aaronkoichi/nvim/blob/master/Images/alpha2.png?raw=true)
+![Screenshot of alpha.lua]( https://github.com/aaronkoichi/nvim/blob/master/Images/alpha.png?raw=true)
 ![Screenshot of Neovim](https://github.com/aaronkoichi/nvim/blob/master/Images/main.png?raw=true)
 ## Prerequisites
  - Rose Pine themed Windows Terminal at windowsterminalthemes.dev 
