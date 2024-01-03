@@ -8,11 +8,11 @@
 ## Oh My Posh Configs 
 ##### Windows config:
 
- ` oh-my-posh init pwsh --config 'C:\Users\[USER FOLDER]\AppData\Local\Programs\oh-my-posh\themes\tokyonight_storm.omp.json' | Invoke-Expression `
+ ` oh-my-posh init pwsh --config 'C:\Users\[USER FOLDER]\AppData\Local\Programs\oh-my-posh\themes\tokyo.omp.json' | Invoke-Expression `
 
 ##### CMD config with Cline:
 
-`load(io.popen('oh-my-posh init cmd --config C:/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/tokyonight_storm.omp.json'):read("*a"))()`
+`load(io.popen('oh-my-posh init cmd --config C:/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/tokyo.omp.json'):read("*a"))()`
 
 ##### WSL bash config:
 
