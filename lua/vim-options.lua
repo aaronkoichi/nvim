@@ -8,8 +8,8 @@ vim.g.mapleader = " "
 vim.opt.incsearch = true
 
 -- Allows to use J and K to move a Selected Visual Block up and down.
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "<S-down>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<S-up>", ":m '<-2<CR>gv=gv")
 
 -- Allows your cursor to be stayed in the front.
 vim.keymap.set("n", "J", "mzJ`z")
@@ -30,10 +30,48 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
-
+-- Makes undotree to be able to undo after a long long time.
+vim.opt.swapfile = false
+vim.opt.backup = false  
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"  
+vim.opt.undofile = true  
 -- use Ctrl+C to get out of insert mode  
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 -- Allows to do find and replace. 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- Split Screen 
+vim.keymap.set("n", "<leader>ss", ":split<Return>")
+vim.keymap.set("n", "<leader>sv", ":vsplit<Return>")
+
+
+-- Navigate between split screens  
+vim.keymap.set("n", "<leader><left>", "<C-w>h")
+vim.keymap.set("n", "<leader><down>", "<C-w>j")
+vim.keymap.set("n", "<leader><up>", "<C-w>k")
+vim.keymap.set("n", "<leader><right>", "<C-w>l")
+
+
+-- New tab 
+vim.keymap.set("n", "<C-PageDown>", ":BufferNext<CR>")
+vim.keymap.set("n", "<C-PageUp>", ":BufferPrevious<CR>")
+vim.keymap.set("n", "<S-PageDown>", ":BufferMoveNext<CR>")
+vim.keymap.set("n", "<S-PageUp>", ":BufferMovePrevious<CR>")
+vim.keymap.set("n", "<leader>x", ":BufferClose<CR>")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
