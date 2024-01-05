@@ -52,6 +52,8 @@ vim.keymap.set("n", "<leader><down>", "<C-w>j")
 vim.keymap.set("n", "<leader><up>", "<C-w>k")
 vim.keymap.set("n", "<leader><right>", "<C-w>l")
 
+-- delete a word backwards
+vim.keymap.set("n", "dw", "vb_d")
 
 -- New tab 
 vim.keymap.set("n", "<C-PageDown>", ":BufferNext<CR>")
