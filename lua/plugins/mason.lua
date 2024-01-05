@@ -54,7 +54,5 @@ return {
 				"eslint_d", -- js linter
 			},
 		})
-	end
-
-
+	end,
 }
