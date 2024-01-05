@@ -63,9 +63,11 @@ vim.keymap.set("n", "<S-PageUp>", ":BufferMovePrevious<CR>")
 vim.keymap.set("n", "<leader>x", ":BufferClose<CR>")
 
 
+vim.keymap.set("n", "<leader>tt", ":TroubleToggle<CR>")
 
-
-
+-- comment (For comment.lua)  
+-- vim.keymap.set("n", "<leader>cc", "gcc")
+-- vim.keymap.set("n", "<leader>bc", "gbc")
 
 
 
