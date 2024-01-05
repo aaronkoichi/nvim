@@ -2,17 +2,17 @@ return {
 	"hrsh7th/nvim-cmp",
 	event = "InsertEnter",
 	dependencies = {
-		    "hrsh7th/cmp-buffer", -- source for text in buffer
-		    "hrsh7th/cmp-path", -- source for file system paths
-			"L3MON4D3/LuaSnip", -- snippet engine
+		"hrsh7th/cmp-buffer",     -- source for text in buffer
+		"hrsh7th/cmp-path",       -- source for file system paths
+		"L3MON4D3/LuaSnip",       -- snippet engine
 		"saadparwaiz1/cmp_luasnip", -- for autocompletion
 		"rafamadriz/friendly-snippets", -- useful snippets
-		"onsails/lspkind.nvim", -- vs-code like pictograms
+		"onsails/lspkind.nvim",   -- vs-code like pictograms
 	},
 
-	config = function ()
+	config = function()
 		local cmp = require("cmp")
-	    local luasnip = require("luasnip")
+		local luasnip = require("luasnip")
 
 		local lspkind = require("lspkind")
 		require("luasnip.loaders.from_vscode").lazy_load()
@@ -22,7 +22,7 @@ return {
 			},
 			snippet = { -- configure how nvim-cmp interacts with snippet engine
 				expand = function(args)
-				luasnip.lsp_expand(args.body)
+					luasnip.lsp_expand(args.body)
 				end,
 			},
 			mapping = cmp.mapping.preset.insert({
@@ -48,7 +48,6 @@ return {
 				}),
 			},
 		})
-
 	end
 
 }

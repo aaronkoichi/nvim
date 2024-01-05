@@ -4,7 +4,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
-	config = function ()
+	config = function()
 		-- import mason
 		local mason = require("mason")
 
@@ -38,14 +38,12 @@ return {
 				"pyright",
 				"jdtls",
 				"bashls",
-				"ast_grep"
+				"ast_grep",
+				"checkstyle",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
 		})
-
-
-
 	end
 
 
