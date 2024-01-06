@@ -20,8 +20,8 @@ return {
 				graphql = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
-				java = {"ast_grep"},
-				cplusplus = {"clang_format", "ast_grep"}
+				java = { "ast_grep", "clang_format" },
+				cplusplus = { "clang_format", "ast_grep" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
