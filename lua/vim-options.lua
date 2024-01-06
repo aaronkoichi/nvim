@@ -68,7 +68,7 @@ vim.keymap.set("n", "<leader>tt", ":TroubleToggle<CR>")
 -- comment (For comment.lua)  
 -- vim.keymap.set("n", "<leader>cc", "gcc")
 -- vim.keymap.set("n", "<leader>bc", "gbc")
-
+vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 
 
 
