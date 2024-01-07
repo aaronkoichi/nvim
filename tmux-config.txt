@@ -1,3 +1,4 @@
+
 unbind r
 bind r source-file ~/.tmux.conf
 set -g prefix C-a
@@ -44,6 +45,58 @@ set -g @catppuccin_status_right_separator_inverse "yes"
 set -g @catppuccin_status_fill "all"
 set -g @catppuccin_status_connect_separator "no"
 set -g status-position top
+unbind r
+bind r source-file ~/.tmux.conf
+set -g prefix C-a
+setw -g mode-keys vi
+bind-key Left select-pane -L
+bind-key Right select-pane -R
+bind-key Up select-pane -U
+bind-key Down select-pane -D
+set -g default-terminal "xterm-256color"
+set-option -ga terminal-overrides ",xterm-256color:Tc"
+set -g mouse on
+
+unbind %
+bind | split-window -h
+
+unbind '"'
+bind - split-window -v 
+
+
+bind -r j resize-pane -D 5
+bind -r k resize-pane -U 5
+bind -r l resize-pane -R 5
+bind -r h resize-pane -L 5
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'christoomey/vim-tmux-navigator'
+set -g @plugin 'catppuccin/tmux'
+
+set -g @catppuccin_window_left_separator "█"
+set -g @catppuccin_window_right_separator "█ "
+set -g @catppuccin_window_number_position "right"
+set -g @catppuccin_window_middle_separator "  █"
+
+set -g @catppuccin_window_default_fill "number"
+
+set -g @catppuccin_window_current_fill "number"
+set -g @catppuccin_window_current_text "#{pane_current_path}"
+
+set -g @catppuccin_status_modules_right "application session date_time"
+set -g @catppuccin_status_left_separator  ""
+set -g @catppuccin_status_right_separator " "
+set -g @catppuccin_status_right_separator_inverse "yes"
+set -g @catppuccin_status_fill "all"
+set -g @catppuccin_status_connect_separator "no"
+set -g status-position top
+
+set -g @plugin 'tmux-plugins/tmux-resurrect' # persist tmux sessions after computer restart
+set -g @plugin 'tmux-plugins/tmux-continuum' # automatically saves sessions for you every 15 minutes
+
+# initiallize TMUX plugins manager
+run '~/.tmux/plugins/tpm/tpm'
 
 
 
