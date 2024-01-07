@@ -19,8 +19,9 @@ return {
 				"black", -- python formatter
 				"pylint", -- python linter
 				"eslint_d", -- js linter
-				"sonarlintlanguageserver",
 				"ast_grep",
+				"clang_format",
+				"google_java_format",
 			},
 		})
 
@@ -46,9 +47,8 @@ return {
 				formatting.isort,
 				formatting.black,
 				diagnostics.pylint,
-				diagnostics.sonarlintlanguageserver,
-				formatting.clangformat,
-				formatting.googlejavaformat,
+				formatting.clang_format,
+				formatting.google_java_format,
 				diagnostics.eslint_d.with({ -- js/ts linter
 					condition = function(utils)
 						return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs
