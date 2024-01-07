@@ -67,3 +67,18 @@ vim.keymap.set("n", "<leader>tt", ":TroubleToggle<CR>")
 -- vim.keymap.set("n", "<leader>cc", "gcc")
 -- vim.keymap.set("n", "<leader>bc", "gbc")
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+
+-- Open compiler
+vim.keymap.set("n", "<F6>", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true })
+
+-- Redo last selected option
+vim.keymap.set(
+	"n",
+	"<S-F6>",
+	"<cmd>CompilerStop<cr>" -- (Optional, to dispose all tasks before redo)
+		.. "<cmd>CompilerRedo<cr>",
+	{ noremap = true, silent = true }
+)
+
+-- Toggle compiler results
+vim.keymap.set("n", "<S-F7>", "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true })
