@@ -16,11 +16,10 @@ return {
 					null_ls.builtins.formatting.clang_format,
 					null_ls.builtins.diagnostics.pylint,
 					null_ls.builtins.formatting.beautysh,
-
-				}
+					null_ls.builtins.formatting.google_java_format,
+				},
 			})
-			vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
+			vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 		end,
-
 	},
 }

@@ -31,7 +31,7 @@ return {
 
 		-- to setup format on save
 		local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-
+		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 		-- configure null_ls
 		null_ls.setup({
 			-- add package.json as identifier for root (for typescript monorepos)
@@ -57,7 +57,7 @@ return {
 			},
 			-- configure format on save
 			on_attach = function(current_client, bufnr)
-				if current_client.supports_method("textDocument/formatting") then
+				--[[ if current_client.supports_method("textDocument/formatting") then
 					vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
 					vim.api.nvim_create_autocmd("BufWritePre", {
 						group = augroup,
@@ -72,7 +72,7 @@ return {
 							})
 						end,
 					})
-				end
+				end ]]
 			end,
 		})
 	end,
