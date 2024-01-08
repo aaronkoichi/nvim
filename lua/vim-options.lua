@@ -1,12 +1,13 @@
 vim.cmd("set mouse=a")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
+vim.cmd("set tabstop=4")
+vim.cmd("set softtabstop=4")
+vim.cmd("set shiftwidth=4")
 vim.cmd("set number")
 vim.cmd("set scrolloff=8")
 vim.g.mapleader = " "
 vim.opt.incsearch = true
 
+vim.opt.guicursor = ""
 -- Allows to use J and K to move a Selected Visual Block up and down.
 vim.keymap.set("v", "<S-down>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<S-up>", ":m '<-2<CR>gv=gv")
