@@ -8,21 +8,22 @@
 - Oh My Posh setup with tokyo theme for Powershell(initial setup), command prompt and WSL.
 - Rose Pine themed Windows Terminal at windowsterminalthemes.dev
 - Font config CaskaydiaCove Nerd Font.
-- Terminal font 20px (100% screen), 13px (125% screen)
+- Terminal font 14px (100% screen), 1.1 line height
 
-## Oh My Posh Configs
+
+- # Oh My Posh Configs
 
 ##### Windows config:
 
-`oh-my-posh init pwsh --config 'C:\Users\[USER FOLDER]\AppData\Local\Programs\oh-my-posh\themes\tokyo.omp.json' | Invoke-Expression`
+`oh-my-posh init pwsh --config 'C:\Users\[USER FOLDER]\AppData\Local\Programs\oh-my-posh\themes\catppuccin_mocha.omp.json' | Invoke-Expression`
 
 ##### CMD config with Cline:
 
-`load(io.popen('oh-my-posh init cmd --config C:/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/tokyo.omp.json'):read("*a"))()`
+`load(io.popen('oh-my-posh init cmd --config C:/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/catppuccin_mocha.omp.json'):read("*a"))()`
 
 ##### WSL bash config:
 
-`eval "$(oh-my-posh init bash --config /mnt/c/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/tokyo.omp.json)"`
+`eval "$(oh-my-posh init bash --config /mnt/c/Users/[USER FOLDER]/AppData/Local/Programs/oh-my-posh/themes/catppuccin_mocha.omp.json)"`
 
 ## NEOVIM configs
 
