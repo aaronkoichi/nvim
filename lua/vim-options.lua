@@ -83,3 +83,15 @@ vim.keymap.set(
 
 -- Toggle compiler results
 vim.keymap.set("n", "<S-F7>", "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true })
+
+
+
+
+
+
+
+
+
+
+
+
