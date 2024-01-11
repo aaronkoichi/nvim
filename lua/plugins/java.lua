@@ -53,9 +53,19 @@ return {
 								)
 							end)
 
+							local bundles = {
+
+									vim.fn.glob(
+										"~/.config/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.50.0.jar",
+										1
+									),
+
+
+							}
 							local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 							-- vim.lsp.set_log_level('DEBUG')
 							local workspace_dir = "/home/jake/.workspace/" .. project_name -- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
+
 							local config = {
 								-- The command that starts the language server
 								-- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
@@ -115,8 +125,19 @@ return {
 										-- disable progress updates.
 									end,
 								},
+								
+								
+
+								vim.list_extend(bundles, vim.split(vim.fn.glob("~/.config/vscode-java-test/server/*.jar", 1), "\n")),
+								init_options = {
+									bundles = bundles;
+								},
+
 							}
+							
 							require("jdtls").start_or_attach(config)
+							require("jdtls").test_class()
+							require("jdtls").test_nearest_method()
 						end,
 					})
 					return true
