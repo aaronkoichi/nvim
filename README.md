@@ -1,7 +1,7 @@
 ## Screenshots
 
-![Screenshot of alpha.lua](https://github.com/aaronkoichi/nvim/blob/master/Images/alpha.png?raw=true)
-![Screenshot of Neovim](https://github.com/aaronkoichi/nvim/blob/master/Images/main.png?raw=true)
+![Screenshot of alpha.lua](https://github.com/aaronkoichi/nvim/blob/master/Images/Screenshot_4.png?raw=true)
+![Screenshot of Neovim](https://github.com/aaronkoichi/nvim/blob/master/Images/Screenshot_5.png?raw=true)
 
 ## Prerequisites
 
